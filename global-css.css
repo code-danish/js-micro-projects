@@ -1,0 +1,14 @@
+:root{
+	/* CSS HEX */
+--battleship-gray: #7a918dff;
+--cambridge-blue: #93b1a7ff;
+--cambridge-blue-2: #99c2a2ff;
+--tea-green: #c5edacff;
+--tea-green-2: #dbfeb8ff;
+}
+
+body {
+	background: var(--battleship-gray);
+	color: rgb(188, 205, 208);
+	color-scheme: dark;
+}

@@ -1,0 +1,74 @@
+:root {
+	--accent-color: #DBFEB8;
+	--secondary-accent-color: #99C2A2;
+	--tertiary-color: #687573b8;
+	--background-color: #07141b;
+	--button-color: #8db295;
+	--input-color: var(--tertiary-color);
+	--li-color: var(--tertiary-color);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+	background: var(--background-color);
+	color: rgb(224, 234, 219);
+	color-scheme: dark;
+	font-family: "Ubuntu", sans-serif;
+}
+
+#add-item-btn {
+	background: var(--button-color);
+	color: black;
+}
+
+hr {
+	border-color: var(--accent-color);
+}
+
+input {
+	background-color: var(--input-color);
+}
+
+.gradient-text {
+	background-image: linear-gradient(to right, rgb(240, 255, 127), peachpuff);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	font-family: "Andika", sans-serif;
+}
+
+.gradient-text-alt {
+	background-image: linear-gradient(to right, #ffdb4b, #a8f2ff, #f9e77c, #00fffb);
+	filter: drop-shadow(0 0 2px var(--accent-color));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	font-family: "Andika", sans-serif;
+}
+
+.accent-border {
+	border: 2px solid var(--accent-color);
+	border-radius: 0.5rem;
+}
+
+.accent-secondary-border {
+	border: 2px solid var(--secondary-accent-color);
+	border-radius: 0.5rem;
+}
+
+ul>li {
+	padding: 5px 10px;
+	margin-top: 1rem;
+	background: var(--li-color);
+	backdrop-filter: blur(10px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	i {
+		cursor: pointer;
+		padding: 0 1.5rem;
+		filter: drop-shadow(0 0 1px black);
+	}
+}
